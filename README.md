@@ -72,11 +72,6 @@ Bus: sending 1 Command, 1 Exchange and 1 Queue will be created
 ![rabbitmq_flow](https://github.com/user-attachments/assets/f3804fc7-9d3a-4f65-96c0-6aadd6c204e9)
 
 
-## Work Flow
-
-![rabbitmq_flow](https://github.com/user-attachments/assets/f3804fc7-9d3a-4f65-96c0-6aadd6c204e9)
-
-
 ## Dead-Lettered Effects
 
 The `reason` is a name describing why the message was dead-lettered and is one of the following:
