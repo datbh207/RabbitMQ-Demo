@@ -5,7 +5,7 @@ To deploy RabbitMQ in Docker
 
 - First u type `dir` it will display information about all files and subfolders in the current directory
 
-```bash
+```powershell
 Mode                 LastWriteTime         Length Name                                                                                                                                                                                        
 ----                 -------------         ------ ----                                                                                                                                                                                        
 d-----          1/4/2024   6:03 PM                .github                                                                                                                                                                                     
@@ -17,7 +17,7 @@ d-----         7/27/2024   5:58 PM                ProducerAPI
 ```
 - Then u copy the name of file <docker.yaml> and write command below
 
-````
+````powershell
 docker compose -f <docker.yaml> up
 ````
 
@@ -34,7 +34,7 @@ Producer:
         + Based on the interfaces/classes that the message tries to create more Exchanges
 
 NOTE: Use `[ExcludeFromTopology]` to remove redundant Exchanges
-````bash
+````C#
     // When use Topic Exchange -> dont use [ExcludeFromTopology]
     [ExcludeFromTopology]
     public interface INotification : IMessage
