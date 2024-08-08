@@ -25,9 +25,7 @@ docker compose -f <docker.yaml> up
 
 # Some Notes
 
-Duration: When stopping RabbitMQ, the messages will be saved below the drive
-
-Producer:
+- Producer:
 
     - Create Exchange:
         + Based on the Class of the Message sent to create an Exchange
@@ -47,13 +45,14 @@ NOTE: Use `[ExcludeFromTopology]` to remove redundant Exchanges
     }
 ````
 
-Consumer:
+- Consumer:
     
     - Create Queue: Create Queues based on the class inheriting IConsumer
     - Create Exchange:
         + Create an Exchange similar to the Queue name
         + Create an Exchange with the name of the Message
 
+- Duration: When stopping RabbitMQ, the messages will be saved below the drive
 - Use `KebabCase` to rename the endpoints (do not change the root).
 
         Exchange: MasstransitRabbitMQ.Contract.IntegrationEvents:DomainEvent-SmsNotificationEvent
